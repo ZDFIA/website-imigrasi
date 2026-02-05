@@ -80,26 +80,9 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="header-container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo Imigrasi">
-            <div class="logo-text">
-                <strong>Portal Informasi</strong>
-                <span>Imigrasi Sumatera Barat</span>
-            </div>
-        </div>
-
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="layanan.html">Layanan</a>
-            <a href="tentang.html">Tentang</a>
-            <a href="sekolah.html">Sekolah Kedinasan</a>
-            <a href="faq.html">FAQ</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
-    </div>
-</header>
+<?php
+    include "navbar.php";
+?>
 
 <section class="detail-card">
     <h2>Tindak Pidana Perdagangan Orang</h2>
@@ -209,85 +192,14 @@
 </div>
 
 <div class="lihat-lainnya" style="margin-top:40px;">
-        <a href="layanan.html">Kembali ke Layanan</a>
+        <a href="layanan.php">Kembali ke Layanan</a>
         </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="footer">
-    <div class="footer-container">
-
-        <!-- KIRI -->
-        <div class="footer-left">
-            <h3>Portal Informasi</h3>
-            <p>Imigrasi Sumatera Barat</p>
-        </div>
-
-        <!-- KANAN -->
-        <div class="footer-right">
-            <div class="footer-menu">
-                <h4>MAIN</h4>
-                <a href="#">Beranda</a>
-                <a href="layanan.html">Layanan</a>
-                <a href="tentang.html">Tentang</a>
-                <a href="faq.html">FAQ</a>
-                <a href="feedback.html">Feedback</a>
-            </div>
-
-            <div class="footer-social">
-                <h4>CONNECT</h4>
-                <div class="ig-dropdown">
-                    <span class="ig-btn">WhatsApp ▾</span>
-                    <div class="ig-menu">
-                        <a href="https://api.whatsapp.com/send?phone=6285274656300" target="_blank">
-                            Imigrasi Agam
-                        </a>
-                    </div>
-                </div>
-
-                <div class="ig-dropdown">
-                    <span class="ig-btn">Instagram ▾</span>
-                    <div class="ig-menu">
-                        <a href="https://www.instagram.com/imigrasisumbar/" target="_blank">Imigrasi Sumatera Barat</a>
-                        <a href="https://www.instagram.com/imigrasipadang/" target="_blank">Imigrasi Padang</a>
-                        <a href="https://www.instagram.com/imigrasiagam/" target="_blank">Imigrasi Agam</a>
-                    </div>
-                </div>
-
-                <div class="ig-dropdown">
-                    <span class="ig-btn">TikTok ▾</span>
-                    <div class="ig-menu">
-                        <a href="https://www.tiktok.com/@imigrasisumbar" target="_blank">Imigrasi Sumatera Barat</a>
-                        <a href="https://www.tiktok.com/@imigrasi_agam" target="_blank">Imigrasi Agam</a>
-                    </div>
-                </div>
-
-                <div class="ig-dropdown">
-                    <span class="ig-btn">Twitter (X) ▾</span>
-                    <div class="ig-menu">
-                        <a href="https://x.com/imigrasisumbar" target="_blank">Imigrasi Sumatera Barat</a>
-                        <a href="https://x.com/imipadang?s=20" target="_blank">Imigrasi Padang</a>
-                        <a href="https://x.com/imigrasiagam" target="_blank">Imigrasi Agam</a>
-                    </div>
-                </div>
-
-                <div class="ig-dropdown">
-                    <span class="ig-btn">Facebook ▾</span>
-                    <div class="ig-menu">
-                        <a href="https://www.facebook.com/imigrasisumbar" target="_blank">Imigrasi Sumatera Barat</a>
-                        <a href="https://www.facebook.com/KanimPadang" target="_blank">Imigrasi Padang</a>
-                        <a href="https://www.facebook.com/agamimigrasi" target="_blank">Imigrasi Agam</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        © 2026 Kantor Wilayah Direktorat Jenderal Imigrasi Sumatera Barat
-    </div>
-</footer>
+<?php
+    include "footer.php";
+?>
 
 </body>
 </html>

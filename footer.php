@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Informasi Paspor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="header">
-    <a href="index.html" style="color:white;text-decoration:none;">← Kembali</a>
-</header>
-
-<section class="detail">
-    <img src="images/paspor.jpg" class="detail-img">
-    <h2>Informasi Paspor</h2>
-    <p>
-        Pelayanan paspor merupakan layanan keimigrasian bagi Warga Negara Indonesia
-        yang meliputi permohonan paspor baru, penggantian paspor, dan perubahan data.
-    </p>
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="footer-container">
 
@@ -34,15 +11,16 @@
         <div class="footer-right">
             <div class="footer-menu">
                 <h4>MAIN</h4>
-                <a href="#">Beranda</a>
-                <a href="layanan.html">Layanan</a>
-                <a href="tentang.html">Tentang</a>
-                <a href="faq.html">FAQ</a>
-                <a href="feedback.html">Feedback</a>
+                <a href="/">Beranda</a>
+                <a href="layanan.php">Layanan</a>
+                <a href="tentang.php">Tentang</a>
+                <a href="faq.php">FAQ</a>
+                <a href="feedback.php">Feedback</a>
             </div>
 
             <div class="footer-social">
                 <h4>CONNECT</h4>
+
                 <div class="ig-dropdown">
                     <span class="ig-btn">WhatsApp ▾</span>
                     <div class="ig-menu">
@@ -88,12 +66,10 @@
                 </div>
             </div>
         </div>
-
     </div>
 
+    <!-- BAWAH -->
     <div class="footer-bottom">
         © 2026 Kantor Wilayah Direktorat Jenderal Imigrasi Sumatera Barat
     </div>
 </footer>
-</body>
-</html>
