@@ -3,8 +3,8 @@
 
         <!-- KIRI -->
         <div class="footer-left">
-            <h3>Portal Informasi</h3>
-            <p>Imigrasi Sumatera Barat</p>
+            <h3>LAPAK KANWIL SUMBAR</h3>
+            <p>Layanan Paspor Keimigrasian KANWIL SUMBAR</p>
         </div>
 
         <!-- TENGAH -->

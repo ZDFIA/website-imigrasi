@@ -5,7 +5,7 @@
             <img src="images/logo.png" alt="Logo Imigrasi">
             <div class="logo-text">
                 <strong>LAPAK KANWIL SUMBAR</strong>
-                <span>Layanan Pasport Keimgrarasian KANWIL SUMBAR</span>
+                <span>Layanan Paspor Keimigrasian KANWIL SUMBAR</span>
             </div>
         </div>
 
