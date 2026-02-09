@@ -80,10 +80,35 @@
     </style>
 </head>
 <body>
-    
-<?php
-    include "navbar.php";
-?>
+
+<header class="header">
+    <div class="header-container">
+        <!-- HAMBURGER BUTTON -->
+<div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Imigrasi">
+            <div class="logo-text">
+                <strong>LAPAK KANWIL SUMBAR</strong>
+                <span>Layanan Paspor Keimigrasian KANWIL SUMBAR</span>
+            </div>
+        </div>
+
+       <nav class="nav nav-button">
+    <a href="index.html" class="btn-nav active">Home</a>
+    <a href="layanan.html" class="btn-nav">Layanan</a>
+    <a href="tentang.html" class="btn-nav">Tentang</a>
+    <a href="sekolah.html" class="btn-nav">Sekolah Kedinasan</a>
+    <a href="faq.html" class="btn-nav">FAQ</a>
+</nav>
+
+
+    </div>
+</header>
 
 <section class="detail-card">
     <h2>Pergantian Paspor</h2>
@@ -169,18 +194,112 @@
     </ul>
   </li>
 </ul>
-
     </div>
 
     <div class="lihat-lainnya" style="margin-top:40px;">
-        <a href="/">Kembali ke Home</a>
+        <a href="layanan.html">Kembali ke Layanan</a>
     </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<?php
-    include "footer.php";
-?>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- KIRI -->
+        <div class="footer-left">
+            <h3>LAPAK KANWIL SUMBAR</h3>
+            <p>Layanan Paspor Keimigrasian KANWIL SUMBAR</p>
+        </div>
+
+        <!-- TENGAH -->
+         <div class="footer-center">
+            <span class="footer-mpasport">
+                <strong>DAFTAR M-PASPORT</strong>
+                <p>Klik Disini!</p>
+            </span>
+
+            <div class="store-icons">
+                <!-- PLAY STORE -->
+                <a href="https://play.google.com/store/apps/details?id=id.go.imigrasi.paspor_online&hl=en-US&pli=1"
+                target="_blank" rel="noopener">
+                    <img src="images/1.png" alt="Google Play">
+                </a>
+            </div>
+            <div class="store-icons">
+            <!-- APP STORE -->
+                <a href="https://apps.apple.com/id/app/m-paspor/id1576336459"
+                target="_blank" rel="noopener">
+                    <img src="images/2.png" alt="App Store">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- KANAN -->
+        <div class="footer-right">
+            <div class="footer-menu">
+                <h4>MAIN</h4>
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>CONNECT</h4>
+
+                <div class="ig-dropdown">
+                    <span class="ig-btn">WhatsApp ▾</span>
+                    <div class="ig-menu">
+                        <a href="https://api.whatsapp.com/send?phone=6285274656300" target="_blank">
+                            Imigrasi Agam
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ig-dropdown">
+                    <span class="ig-btn">Instagram ▾</span>
+                    <div class="ig-menu">
+                        <a href="https://www.instagram.com/imigrasisumbar/" target="_blank">Imigrasi Sumatera Barat</a>
+                        <a href="https://www.instagram.com/imigrasipadang/" target="_blank">Imigrasi Padang</a>
+                        <a href="https://www.instagram.com/imigrasiagam/" target="_blank">Imigrasi Agam</a>
+                    </div>
+                </div>
+
+                <div class="ig-dropdown">
+                    <span class="ig-btn">TikTok ▾</span>
+                    <div class="ig-menu">
+                        <a href="https://www.tiktok.com/@imigrasisumbar" target="_blank">Imigrasi Sumatera Barat</a>
+                        <a href="https://www.tiktok.com/@imigrasi_agam" target="_blank">Imigrasi Agam</a>
+                    </div>
+                </div>
+
+                <div class="ig-dropdown">
+                    <span class="ig-btn">Twitter (X) ▾</span>
+                    <div class="ig-menu">
+                        <a href="https://x.com/imigrasisumbar" target="_blank">Imigrasi Sumatera Barat</a>
+                        <a href="https://x.com/imipadang?s=20" target="_blank">Imigrasi Padang</a>
+                        <a href="https://x.com/imigrasiagam" target="_blank">Imigrasi Agam</a>
+                    </div>
+                </div>
+
+                <div class="ig-dropdown">
+                    <span class="ig-btn">Facebook ▾</span>
+                    <div class="ig-menu">
+                        <a href="https://www.facebook.com/imigrasisumbar" target="_blank">Imigrasi Sumatera Barat</a>
+                        <a href="https://www.facebook.com/KanimPadang" target="_blank">Imigrasi Padang</a>
+                        <a href="https://www.facebook.com/agamimigrasi" target="_blank">Imigrasi Agam</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BAWAH -->
+    <div class="footer-bottom">
+        © 2026 Kantor Wilayah Direktorat Jenderal Imigrasi Sumatera Barat
+    </div>
+</footer>
 
 </body>
 </html>
