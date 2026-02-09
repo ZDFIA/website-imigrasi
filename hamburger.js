@@ -1,4 +1,9 @@
 function toggleMenu() {
-  document.querySelector('.nav').classList.toggle('show');
-  document.querySelector('.hamburger').classList.toggle('active');
+  const nav = document.querySelector(".nav.nav-button");
+  const hamburger = document.querySelector(".hamburger");
+  const header = document.querySelector(".header");
+
+  nav.classList.toggle("show");
+  hamburger.classList.toggle("active");
+  header.classList.toggle("menu-open");
 }
