@@ -1960,7 +1960,76 @@ body {
   color: #fff;
 }
 
+/* Footer kiri rapi di HP */
+@media (max-width: 768px) {
+  .footer-left {
+    text-align: left;
+    width: 100%;
+    padding-left: 16px;   /* jarak dari tepi kiri */
+    padding-right: 16px;
+  }
 
+  .footer-left h3,
+  .footer-left p {
+    text-align: left;
+  }
+}
+
+/* Footer tengah rapi di HP */
+@media (max-width: 768px) {
+  .footer-center {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-mpasport {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .store-icons {
+    display: inline-block;   /* supaya sejajar */
+    margin: 6px;
+  }
+
+  .store-icons img {
+    width: 140px;   /* ukuran aman di HP */
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* 🔥 pusatkan grup */
+    gap: 25px;                 /* jarak MAIN & CONNECT */
+  }
+
+  .footer-menu,
+  .footer-social {
+    text-align: center;
+    width: auto;               /* jangan full */
+  }
+
+  .footer-menu h4,
+  .footer-social h4 {
+    margin-bottom: 6px;
+  }
+
+  .footer-menu a,
+  .ig-btn,
+  .ig-menu a {
+    padding: 2px 0;            /* rapatkan */
+    text-align: center;
+  }
+
+  .ig-dropdown {
+    width: auto;
+  }
+}
 
 
 
