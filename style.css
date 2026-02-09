@@ -1908,21 +1908,29 @@ body {
   color: #ffd700; /* atau putih kalau mau */
 }
 
-/* mobile full kiri */
+/* MOBILE: paksa menu nempel kiri layar */
 @media (max-width: 768px) {
   .nav.nav-button {
+    position: fixed;          /* biar lepas dari header */
+    top: 80px;                /* sesuaikan tinggi header */
     left: 0 !important;
     right: auto !important;
-    transform: none !important;
-    width: 100%;
+    transform: translateX(0) !important;
+
+    width: 100vw;             /* full layar */
+    padding-left: 0;
+    margin-left: 0;
+
     align-items: flex-start;
   }
 
   .nav.nav-button a {
+    width: 100%;
     text-align: left;
-    width: 100%; /* supaya garis full layar */
+    padding-left: 16px;       /* jarak teks dari kiri */
   }
 }
+
 
 /* rapatkan menu ke atas */
 .nav.nav-button {
