@@ -1815,8 +1815,150 @@ body {
   transform: translateY(180px);
 }
 
+/* semua section default */
+.hero,
+.portal-summary,
+.footer {
+  transition: transform 0.4s ease;
+}
 
+/* saat menu dibuka → SEMUA turun */
+.header.menu-open ~ .hero,
+.header.menu-open ~ .portal-summary,
+.header.menu-open ~ .footer {
+  transform: translateY(220px);
+}
 
+/* TRANSISI SEMUA KONTEN */
+.hero,
+.portal,
+.footer {
+  transition: transform 0.4s ease;
+}
+
+/* SAAT MENU DIBUKA → SEMUA TURUN */
+.header.menu-open ~ .hero,
+.header.menu-open ~ .portal,
+.header.menu-open ~ .footer {
+  transform: translateY(240px);
+}
+
+/* TRANSISI KONTEN DETAIL */
+.detail-card,
+.footer {
+  transition: transform 0.4s ease;
+}
+
+/* SAAT MENU DIBUKA → KONTEN TURUN */
+.header.menu-open ~ .detail-card,
+.header.menu-open ~ .footer {
+  transform: translateY(240px);
+}
+
+/* ================= TRANSISI HALAMAN TENTANG ================= */
+.hero,
+.bidang-tugas-section,
+.wilayah-section,
+.layanan-section,
+.footer {
+  transition: transform 0.4s ease;
+}
+
+/* SAAT MENU DIBUKA → SEMUA KONTEN TURUN */
+.header.menu-open ~ .hero,
+.header.menu-open ~ .bidang-tugas-section,
+.header.menu-open ~ .wilayah-section,
+.header.menu-open ~ .layanan-section,
+.header.menu-open ~ .footer {
+  transform: translateY(240px);
+}
+
+/* ================= TRANSISI HALAMAN SEKOLAH ================= */
+.hero,
+.layanan-section,
+.info-daftar,
+.footer {
+  transition: transform 0.4s ease;
+}
+
+/* SAAT MENU DIBUKA → SEMUA KONTEN TURUN */
+.header.menu-open ~ .hero,
+.header.menu-open ~ .layanan-section,
+.header.menu-open ~ .info-daftar,
+.header.menu-open ~ .footer {
+  transform: translateY(240px);
+}
+
+.nav.nav-button {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.nav.nav-button a {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 12px 16px;
+  color: #fff;
+}
+
+/* hover juga jangan bikin kotak */
+.nav.nav-button a:hover {
+  background: none !important;
+  color: #ffd700; /* atau putih kalau mau */
+}
+
+/* mobile full kiri */
+@media (max-width: 768px) {
+  .nav.nav-button {
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav.nav-button a {
+    text-align: left;
+    width: 100%; /* supaya garis full layar */
+  }
+}
+
+/* rapatkan menu ke atas */
+.nav.nav-button {
+  top: 100px !important;
+}
+
+/* style link menu */
+.nav.nav-button a {
+  padding: 10px 16px !important;
+  line-height: 1.2;
+  background: none !important;
+  border: none !important;
+  color: #ddd;
+  position: relative;
+}
+
+/* garis bawah full */
+.nav.nav-button a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.3);
+}
+
+/* HOME / ACTIVE putih */
+.nav.nav-button a.active {
+  color: #fff !important;
+}
+
+/* hover */
+.nav.nav-button a:hover {
+  color: #fff;
+}
 
 
 
