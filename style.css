@@ -1635,36 +1635,146 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
 
-  /* tampilkan hamburger */
-  .hamburger {
-    display: flex;
-  }
-
-  /* sembunyikan menu */
+  /* sembunyikan menu default */
   .nav.nav-button {
     display: none;
     position: absolute;
     top: 70px;
     right: 15px;
     background: #0b3a57;
-    flex-direction: column;
-    width: 200px;
-    border-radius: 12px;
-    padding: 10px 0;
+    flex-direction: column;   /* turun ke bawah */
+    width: 230px;
+    border-radius: 14px;
+    padding: 8px 0;
     box-shadow: 0 8px 20px rgba(0,0,0,.4);
     z-index: 999;
   }
 
-  /* menu aktif */
+  /* saat aktif */
   .nav.nav-button.show {
     display: flex;
   }
 
+  /* link menu */
   .nav.nav-button a {
-    padding: 12px;
-    text-align: center;
+    padding: 14px 18px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .nav.nav-button a:last-child {
+    border-bottom: none;
+  }
+
+  .nav.nav-button a:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  /* posisi hamburger */
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav.nav-button {
+    display: none;
   }
 }
+
+/* ================= TRANSISI HAMBURGER ================= */
+.hamburger span {
+  transition: all 0.4s ease;
+}
+
+/* jadi X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ================= MOBILE EFFECT ================= */
+@media (max-width: 768px) {
+
+  .header-container {
+    position: relative;
+    transition: all 0.4s ease;
+  }
+
+  /* posisi awal logo */
+  .logo {
+    transition: all 0.4s ease;
+  }
+
+  /* saat menu dibuka → logo ke tengah */
+  .header.menu-open .logo {
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(10px);
+  }
+
+  /* hamburger default di kanan atas */
+  .hamburger {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    display: flex;
+    transition: all 0.4s ease;
+  }
+
+  /* saat aktif → pindah ke bawah logo */
+  .header.menu-open .hamburger {
+    top: 85px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  /* menu dropdown */
+  .nav.nav-button {
+    display: none;
+    position: absolute;
+    top: 140px;
+    right: 50%;
+    transform: translateX(50%);
+    background: #0b3a57;
+    flex-direction: column;
+    width: 240px;
+    border-radius: 16px;
+    padding: 10px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .nav.nav-button.show {
+    display: flex;
+    opacity: 1;
+  }
+
+  .nav.nav-button a {
+    padding: 14px 18px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .nav.nav-button a:last-child {
+    border-bottom: none;
+  }
+
+  .nav.nav-button a:hover {
+    background: rgba(255,255,255,0.08);
+  }
+}
+
 
 
 
