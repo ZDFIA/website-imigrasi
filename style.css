@@ -1753,23 +1753,6 @@ body {
   }
 }
 
-.logo-text strong,
-.logo-text span {
-  white-space: nowrap;      /* jangan turun baris */
-  overflow: hidden;         /* potong kalau kepanjangan */
-  text-overflow: ellipsis;  /* kasih ... */
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .logo-text strong {
-    font-size: 11px;
-  }
-
-  .logo-text span {
-    font-size: 9px;
-  }
-}
 
 
   /* saat aktif → pindah ke bawah logo */
