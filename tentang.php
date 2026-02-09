@@ -63,22 +63,17 @@ Telepon: (0751) 123456</p>
 </section>
 
 <section class="wilayah-section">
-    <h2 class="info-title">WILAYAH KERJA</h2>
+    <h2 class="info-title">UNIT KERJA</h2>
 
     <div class="info-grid">
         <div class="info-box">
-            <h3>Kota Padang</h3>
+            <h3>Kantor Imigrasi Kelas I TPI PADANG</h3>
             <p>Kota Padang mencakup 11 kecamatan dan 104 kelurahan</p>
         </div>
         <div class="info-box">
-            <h3>Kota Padang</h3>
-            <p>Kabupaten Aceh Utara mencakup 11 kecamatan dan 104 kelurahan</p>
+            <h3>Kantor Imigrasi Kelas I NON TPI AGAM</h3>
+            <p>Kota Padang  mencakup 11 kecamatan dan 104 kelurahan</p>
         </div>
-        <div class="info-box">
-            <h3>Kabupaten Agam</h3>
-            <p>Kabupaten Bireuen mencakup 16 kecamatan dan 92 nagari</p>
-        </div>
-    </div>
 </section>
 
 <section class="layanan-section">
